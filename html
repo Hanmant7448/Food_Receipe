@@ -1,0 +1,12 @@
+<script>
+document.querySelector('.recipe-form').addEventListener('submit', function(e) {
+    let title = document.querySelector('#title').value;
+    let ingredients = document.querySelector('#ingredients').value;
+    let instructions = document.querySelector('#instructions').value;
+
+    if (!title || !ingredients || !instructions) {
+        alert("All fields are required!");
+        e.preventDefault();
+    }
+});
+</script>
